@@ -1,0 +1,22 @@
+{
+  "name": "task-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larts85/task-service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larts85/task-service/issues"
+  },
+  "homepage": "https://github.com/larts85/task-service#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
