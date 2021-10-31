@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9000:3000"
+    volumes:
+      - .:/app
+      - "/app/node_modules"
+    depends_on:
+      - mysql_server
+
+  mysql_server:
+    image: mysql:5.7
+    environment:
+      - MYSQL_DATABASE=tasks-service
+      - MYSQL_USER=imadev
+      - MYSQL_PASSWORD=secret
+      - MYSQL_ROOT_PASSWORD=secret
+    ports:
+      - "3306:3306"
+    restart: always
